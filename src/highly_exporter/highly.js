@@ -39,9 +39,11 @@ async function httpGetAsync(url){
 
 function processJSON(articles) {
     function processArticle(article) {
-        return {[article.url]: {
-            title: article.title, 
-            highlights: article.highlights}}
+        return {
+            [article.url]: {
+                title: article.title,
+                highlights: article.highlights}
+        }
     }
     return articles.reduce(
         (acc, cur) => ({...acc, ...processArticle(cur)}), {})
@@ -69,4 +71,4 @@ async function run() {
     console.log(csv)
 }
 
-run()
+run().catch(err => console.log(err))
