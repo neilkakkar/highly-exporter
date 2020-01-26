@@ -11,7 +11,7 @@ This just requires [node.js](https://nodejs.org/en/download/) and no other modul
 
 # Usage
 
-Add your token to the TOKEN variable in `highly.js`.
+Add your token to the [TOKEN variable](https://github.com/neilkakkar/highly-exporter/blob/master/src/highly_exporter/highly.js#L3) in `highly.js`.
 
 You can generate a csv or a json.
 Clone repo, then run:
@@ -22,7 +22,7 @@ node src/highly_exporter/highly.js > highlights.csv
 
 This will save highlights to a csv file.
 
-To switch to json, just uncomment the console log line for json (and comment the one for csv) [here]().
+To switch to json, just uncomment the console log line for json (and comment the one for csv) [here](https://github.com/neilkakkar/highly-exporter/blob/master/src/highly_exporter/highly.js#L67).
 
 This works well because I don't log anything else. 
 
